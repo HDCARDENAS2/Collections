@@ -45,6 +45,7 @@ public class MainChallenge {
             }
 
             // Se debe poder eliminar las ciudades con la letra a sin generar una excepción como la que genera el código en la línea 28
+            // Se agrega un comentario
          if (string.contains("a")) {
                 it.remove(); // Utilizar el método remove del iterador para evitar ConcurrentModificationException
             }
