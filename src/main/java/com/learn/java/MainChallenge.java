@@ -41,7 +41,9 @@ public class MainChallenge {
             String string = it.next();
 
             // Se debe poder eliminar las ciudades con la letra a sin generar una excepción como la que genera el código en la línea 28
-         
+         if (string.contains("a")) {
+                it.remove(); // Utilizar el método remove del iterador para evitar ConcurrentModificationException
+            }
         
         }
         // La repuesta esperada seria la siguiente: Destinos sin la letra a -> [Tokio, Londres]
