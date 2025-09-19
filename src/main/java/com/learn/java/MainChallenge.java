@@ -40,7 +40,7 @@ public class MainChallenge {
 
             String string = it.next();
             
-            if (string.contains("P")) {
+            if (string.contains("N")) {
                 it.remove(); // Utilizar el método remove del iterador para evitar ConcurrentModificationException
             }
 
