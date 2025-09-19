@@ -39,6 +39,10 @@ public class MainChallenge {
         while (it.hasNext()) {
 
             String string = it.next();
+            
+            if (string.contains("a")) {
+                it.remove(); // Utilizar el método remove del iterador para evitar ConcurrentModificationException
+            }
 
             // Se debe poder eliminar las ciudades con la letra a sin generar una excepción como la que genera el código en la línea 28
          
